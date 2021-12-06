@@ -1185,6 +1185,7 @@ footer .contact-action .contact-action__box{
     display: inherit;
     width: 100%;
     overflow-x: scroll;
+    padding-bottom: 20px;
   }
   .session7 .about .small-bg img {
     width: 100%;
@@ -1199,7 +1200,7 @@ footer .contact-action .contact-action__box{
     width: 100%;
   }
   .session7 .slide.mb .row{
-    width: 750px;
+    width: 640px;
   }
   .session7 .slide.mb::-webkit-scrollbar {
     width: 4px;
