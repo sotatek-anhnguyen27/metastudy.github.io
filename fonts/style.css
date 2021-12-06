@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Carmen Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./carmen-sans/Sans Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Carmen Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./carmen-sans/Carmen Sans Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Carmen Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./carmen-sans/Carmen Sans SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Carmen Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./carmen-sans/Carmen Sans Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Carmen Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./carmen-sans/Carmen Sans ExtraBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Carmen Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./carmen-sans/Carmen Sans Heavy.woff') format('woff');
+}
+
+/* Roboto font */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./Roboto/Roboto-Black.ttf') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./Roboto/Roboto-Bold.ttf') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./Roboto/Roboto-Medium.ttf') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Roboto/Roboto-Regular.ttf') format('woff2');
+    }
