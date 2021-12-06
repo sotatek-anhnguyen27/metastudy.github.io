@@ -1202,6 +1202,9 @@ footer .contact-action .contact-action__box{
   .session7 .slide.mb .row{
     width: 640px;
   }
+  .session7 .slide.team__founder__slide.mb .row{
+    width: 800px;
+  }
   .session7 .slide.mb::-webkit-scrollbar {
     width: 4px;
     height: 4px;
