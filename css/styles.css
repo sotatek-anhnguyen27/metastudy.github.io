@@ -1024,7 +1024,7 @@ footer .contact-action .contact-action__box{
     font-size: 27px;
   }
   .title__main h2 {
-    font-size: 32px;
+    font-size: 29px;
     line-height: 45px;
   }
   .session2 .title__main {
@@ -1059,6 +1059,13 @@ footer .contact-action .contact-action__box{
   }
   .session3 {
     padding-bottom: 50px;
+  }
+  .session4 .content-left--title {
+    margin-bottom: 50px;
+  }
+  .session4 .content-left--title h2 {
+    margin-left: 0;
+    text-align: center;
   }
   .session5 .col-5 {
     width: 100%;
