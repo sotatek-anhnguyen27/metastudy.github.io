@@ -276,7 +276,7 @@ body {
   width: 3px;
   background-color: #0484FF;
   top: 0;
-  bottom: 13%;
+  bottom: 0;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -297,9 +297,6 @@ body {
   padding-right: 0;
 }
 
-.timeline .timeline__container:not(:first-child) {
-  margin-top: -113px;
-}
 /* The circles on the timeline */
 .timeline .timeline__container::after {
   content: '';
@@ -358,7 +355,7 @@ body {
 
 /* The actual content */
 .timeline .content {
-  padding: 20px 30px;
+  padding: 10px 30px;
   background-color: white;
   position: relative;
   border-radius: 6px;
@@ -387,6 +384,7 @@ body {
   width: 1400px;
   justify-content: space-around;
   position: relative;
+  padding: 0 30px;
   padding-top: 40px;
 }
 .timeline-mb::before{
@@ -403,13 +401,18 @@ body {
   position: relative;
 }
 
+.timeline-mb .timeline__container .content{
+  text-align: center;
+}
+
 .timeline-mb .timeline__container::after {
   content: '';
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  background-image: url('../images/time-line-icon.png');
+  left: 50%;
+  margin-left: -10px;
+  background-image: url(../images/time-line-icon.png);
   background-size: cover;
   background-repeat: no-repeat;
   top: -40px;
