@@ -932,9 +932,9 @@ footer .contact-action .contact-action__box{
   }
   .session5 .col-7 {
     width: 50%;
+    overflow: hidden;
   }
   .session5 .content-right {
-    width: 120%;
     margin-top: 10%;
     margin-left: -10%;
   }
