@@ -158,8 +158,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section1 .content .col-3{
   width: 22%;
-  overflow: hidden;
+  overflow: hidden; 
   padding: 0;
+  display: flex;
+  align-items: flex-end;
 }
 .section1 .content .col-6{
   width: 56%;
@@ -223,6 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section2 .main-benefits__item{
   background: rgba(0, 140, 240, 0.15);
+  height: 100%;
   border: 5px solid #FFFFFF;
   box-shadow: inset 0px 4px 20px rgba(90, 155, 254, 0.6);
   border-radius: 20px;
@@ -241,9 +244,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 32px;
   font-weight: 900;
   margin-top: 15px;
-}
-.section2 .main-benefits__item--des {
-  height: 130px;
 }
 .section2 .main-benefits__item--des p{
   white-space: pre-line;
@@ -382,6 +382,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section3 .educator-item {
   background: #D9EEFD;
+  height: 100%;
   box-shadow: inset 0px 4px 20px rgba(90, 155, 254, 0.6);
   border-radius: 20px;
   padding: 50px 0;
@@ -403,10 +404,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 21px;
   font-size: 17px;
 }
-.section3 .educator-item__content{
-  min-height: 6vw;
-}
 
+.section3 .educator-item__content{
+  padding: 10px;
+}
 /* session 3 end */
 
 
@@ -443,10 +444,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section4 .educator-item {
   background: #D9EEFD;
+  height: 100%;
   box-shadow: inset 0px 4px 20px rgba(90, 155, 254, 0.6);
   border-radius: 20px;
   padding: 50px 0;
   margin-bottom: 30px;
+}
+.section4 .col-4 {
+  margin-bottom: 20px;
 }
 .section4 .educator-item__img {
   margin-bottom: 35px;
@@ -470,7 +475,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 17px;
 }
 .section4 .educator-item__content{
-  min-height: 8vw;
+  padding: 10px;
 }
 /* .section4 .educator-item.special-item .educator-item__content{
   min-height: calc(7vw - 10px);
@@ -566,17 +571,54 @@ footer .contact-action .contact-action__box{
 }
 
 @media (max-width: 1600px) {
+  .section1 .content--center .description p,
+  .section1 .content--center .title h1{
+    white-space: normal;
+  }
+  .section1 .content-solutions {
+    margin-top: 30px;
+  }
+  .section1 .content--center .title h1 {
+    font-size: 45px;
+    line-height: normal;
+  }
   footer .container {
     max-width: 1320px;
   }
 }
 
 @media (max-width: 1400px) {
-  .section1 .container-fluid {
-    padding: 20px;
-  }
   .section1 .navbar-nav .nav-item {
     padding: 0 13px;
+  }
+  .section2 .main-benefits__item--des p {
+    white-space: normal;
+  }
+  .section2 .main-benefits__item {
+    margin-bottom: 10px;
+  }
+  .section2 .main-benefits__item{
+    padding: 10px;
+  }
+  .section2 .protocol-item .content__text p, .section2 .rewards-issuance-item .content__text p {
+    white-space: normal;
+  }
+  .section3 .educator-item {
+    padding: 20px 0;
+  }
+  .section3 .educator-item__content p {
+    white-space: normal;
+  }
+  
+  .section3 .col {
+    margin-bottom: 20px;
+  }
+  .section4 .educator-item__title h4 {
+    white-space: normal;
+
+  }
+  .section4 .educator-item__content p {
+    white-space: normal;
   }
   footer .logo {
     height: 60px;
@@ -615,12 +657,40 @@ footer .contact-action .contact-action__box{
   .section1 .header .logo {
     height: 38px;
   }
+  .section1 .header .container-fluid {
+    padding: 20px;
+  }
+  .section1 .content {
+    margin-top: 30px;
+  }
   .section1 .header .btn--contact {
     margin-top: 20px;
     display: inline-block;
   }
   .section1 .navbar .navbar-collapse{
     margin-left: 5%;
+  }
+  .section1 .container-fluid {
+    padding: 20px;
+  }
+  .section1 .content .col-3 {
+    display: none;
+  }
+  .section1 .content .col-6 {
+    width: 100%;
+  }
+  .section1 .content--center .title h1 {
+    white-space: pre-line;
+  }
+  .section1 .content-solutions .solutions {
+    position: initial;
+  }
+
+  .section2 .loyalty-solution__slide .protocol-item .col {
+    flex: 1 0 100%;
+  }
+  .section4 .col-4 {
+    width: 50%;
   }
   footer {
     text-align: center;
@@ -660,3 +730,33 @@ footer .contact-action .contact-action__box{
   }
 }
 
+@media (max-width: 768px) {
+  .section4 .col-4 {
+    width: 100%;
+  }
+}
+@media (max-width: 625px) {
+  .section1 .content-solutions {
+    padding: 10px;
+  }
+  .section1 .content-solutions .solutions {
+    margin-top: 0;
+  }
+  .section1 .content-solutions .border-img img {
+    width: 100%;
+  }
+  .section1 .content-solutions .solutions .col{
+    flex: 1 0 50%;
+  }
+  .title__sup .title__sup__text p {
+    font-size: 25px;
+    line-height: normal;
+  }
+  .title__main h2 {
+    font-size: 35px;
+    line-height: normal;
+  }
+  .section3 .educator-item__img {
+    margin-bottom: 20px;
+  }
+}

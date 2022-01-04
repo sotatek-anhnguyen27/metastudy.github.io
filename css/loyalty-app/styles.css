@@ -203,6 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section2 .main-benefits__item{
   background: rgba(0, 140, 240, 0.15);
+  height: 100%;
   border: 5px solid #FFFFFF;
   box-shadow: inset 0px 4px 20px rgba(90, 155, 254, 0.6);
   border-radius: 20px;
@@ -370,6 +371,9 @@ footer .contact-action .contact-action__box{
   .section1 .navbar-nav .nav-item {
     padding: 0 13px;
   }
+  .section2 .main-benefits__item--des p {
+    white-space: normal;
+  }
   footer .logo {
     height: 60px;
     margin-left: -40px;
@@ -397,12 +401,24 @@ footer .contact-action .contact-action__box{
   }
 }
 
+@media (max-width: 1200px) {
+  .section1 .content .col {
+    flex: 1 0 100%;
+  }
+}
+
 @media (max-width: 992px) {
   .header{
     display: none;
   }
   .header.header--mobile {
     display: block;
+  }
+  .section1 {
+    background-size: auto;
+  }
+  .section1 .header .container-fluid {
+    padding: 20px;
   }
   .section1 .header .logo {
     height: 38px;
@@ -413,6 +429,29 @@ footer .contact-action .contact-action__box{
   }
   .section1 .navbar .navbar-collapse{
     margin-left: 5%;
+  }
+  .section1 .content {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section1 .content-right {
+    text-align: center;
+  }
+  .section1 .content-right__title h1 {
+    font-size: 55px;
+    margin-bottom: 25px;
+  }
+  .section1 .content-right__des h2 {
+    font-size: 35px;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  .section1 .content-right__note p {
+    white-space: normal;
+
+  }
+  .section2 .detail-benefits .col-7, .section2 .detail-benefits .col-5{
+    width: 100%;
   }
   footer {
     text-align: center;
@@ -452,3 +491,32 @@ footer .contact-action .contact-action__box{
   }
 }
 
+@media (max-width: 768px) {
+  .section1 .content {
+    margin-top: 50px;
+    padding-bottom: 0;
+  }
+  .section1 .content .col {
+    flex: 1 0 100%;
+  }
+  .section1 .content-right__title h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .section1 .content-right__des h2 {
+    font-size: 25px;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  .section1 .content-right__note p {
+    white-space: normal;
+
+  }
+  .section2 {
+    padding-top: 50px;
+    padding-bottom: 7vw;
+  }
+  .section2 .main-benefits .title {
+    margin-bottom: 35px;
+  }
+}
