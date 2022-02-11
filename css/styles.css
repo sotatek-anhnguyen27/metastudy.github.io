@@ -536,6 +536,9 @@ body {
 .section5 .table.table--big tbody>:not(caption)>* {
   padding: 0.5rem;
 }
+.section5 .table.table--big tbody>:not(caption)>* .color{
+  color: #F4A65C;
+}
 .section5 .table .blue-color{
   color: #04F2FF;
   font-weight: 600;
