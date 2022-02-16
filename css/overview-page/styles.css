@@ -748,6 +748,15 @@ footer .contact-action .contact-action__box{
 
 @media (max-width: 768px) {
 
+  .section1 .content--center .title h1{
+    font-size: 7vw;
+  }
+  .section1 .content--center .description p {
+    font-size: 4vw;
+  }
+  .section1 .content-solutions .solutions {
+    margin-bottom: -18vw;
+  }
   .section2 .main-benefits--pc{
     display: none;
   }
