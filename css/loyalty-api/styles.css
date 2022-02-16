@@ -185,6 +185,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.section2 .main-benefits--mobile{
+  display: none;
+}
+.section2 .main-benefits__item--img
 .section2 .main-benefits .title{
   margin-bottom: 70px;
 }
@@ -205,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section2 .main-benefits__item--img{
   height: 230px;
+  width: fit-content;
   margin: 0 auto;
 }
 .section2 .main-benefits__item--img img{
@@ -464,6 +469,12 @@ footer .contact-action .contact-action__box{
   .section1 .content .col {
     flex: 1 0 100%;
   }
+  .section1 .content .col.order-1{
+    order: 2!important;
+  }
+  .section1 .content .col.order-2{
+    order: 1!important;
+  }
   .section1 .content-right__title h1 {
     font-size: 45px;
     margin-bottom: 20px;
@@ -477,5 +488,21 @@ footer .contact-action .contact-action__box{
   }
   .section2 .main-benefits .title {
     margin-bottom: 35px;
+  }
+  .section2 .main-benefits--pc{
+    display: none;
+  }
+
+  .section2 .main-benefits--mobile{
+    display: flex;
+  }
+  .section2 .detail-benefits--box {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section2 .detail-benefits--box .icon {
+    margin-right: 0;
   }
 }

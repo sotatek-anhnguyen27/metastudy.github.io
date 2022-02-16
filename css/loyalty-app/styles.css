@@ -191,6 +191,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.section2 .main-benefits--mobile{
+  display: none;
+}
+
 .section2 .main-benefits .title{
   margin-bottom: 70px;
 }
@@ -211,6 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section2 .main-benefits__item--img{
   height: 230px;
+  width: fit-content;
   margin: 0 auto;
 }
 .section2 .main-benefits__item--img img{
@@ -492,10 +497,20 @@ footer .contact-action .contact-action__box{
 }
 
 @media (max-width: 768px) {
+  .section1 {
+    background-image: url('../../images/loyalty-app/s1-banner-bg-mb.png');
+    padding-bottom: 90vw;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+  }
   .section1 .content {
     margin-top: 50px;
     padding-bottom: 0;
   }
+  .section1 .content-right {
+    text-align: left;
+}
   .section1 .content .col {
     flex: 1 0 100%;
   }
@@ -518,5 +533,27 @@ footer .contact-action .contact-action__box{
   }
   .section2 .main-benefits .title {
     margin-bottom: 35px;
+  }
+  .section2 .main-benefits--pc{
+    display: none;
+  }
+
+  .section2 .main-benefits--mobile{
+    display: flex;
+  }
+  .section2 .detail-benefits--box {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section2 .detail-benefits--box .icon {
+    margin-right: 0;
+  }
+  .section2 .detail-benefits .col-7{
+    order: 1!important;
+  }
+  .section2 .detail-benefits .col-5{
+    order: 2!important;
   }
 }
